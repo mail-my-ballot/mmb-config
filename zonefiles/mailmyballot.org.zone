@@ -1,0 +1,29 @@
+$ORIGIN mailmyballot.org.
+
+; GSuite Email
+@						IN MX			1	aspmx.l.google.com.
+@						IN MX			5	alt1.aspmx.l.google.com.
+@						IN MX			5	alt2.aspmx.l.google.com.
+@						IN MX			10	alt3.aspmx.l.google.com.
+@						IN MX			10	alt4.aspmx.l.google.com.
+@						IN MX			15  yacxhhxbqxxa2m44xdmu3qsuilsdc2vfebldp7av7u7zzp2bbzoa.mx-verification.google.com.
+@						IN TXT      	   	v=spf1 include:_spf.google.com ~all
+
+; mailgun email 
+email					IN TXT 				v=spf1 include:mailgun.org ~all
+email					IN MX 			10	mxa.mailgun.org.
+email					IN MX 			10	mxb.mailgun.org.
+email.email				IN CNAME 			mailgun.org.
+krs._domainkey.email	IN TXT 				k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDanswo2OKDmGLrrDU4bk6uL9lQCui2LNRA5Wh9SAA9KI60Lsc0X8PUyvA+xyGaGioJ8oPIxr567KCzIAZZ/vlPkmN12PWB2YIQPU19lBXlcQ0F1Uh0PVrqHq3x6RM1erzwH1IwL2sBwy/gTdiF8gtd6sDymv3PK3LuXMWdAQwaZQIDAQAB
+
+; gcloud
+app.staging				IN TXT				google-site-verification=wrtDiv5x20RyEoo-eA9ynpYGxVrFS5xtZwwzYBwSbwo
+@						IN TXT      		google-site-verification=wrtDiv5x20RyEoo-eA9ynpYGxVrFS5xtZwwzYBwSbwo
+app.staging				IN A 				216.239.32.21
+app.staging				IN A 				216.239.34.21
+app.staging				IN A 				216.239.36.21
+app.staging				IN A 				216.239.38.21
+app.staging				IN AAAA 			2001:4860:4802:32::15
+app.staging				IN AAAA 			2001:4860:4802:34::15
+app.staging				IN AAAA 			2001:4860:4802:36::15
+app.staging				IN AAAA 			2001:4860:4802:38::15
