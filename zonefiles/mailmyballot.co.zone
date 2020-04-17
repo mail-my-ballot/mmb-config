@@ -1,0 +1,8 @@
+$ORIGIN mailmyballot.co.
+@ IN SOA ns11.constellix.com. dns.constellix.com. 2015010116 43200 3600 1209600 180
+
+;comment
+staging				IN CNAME	mailmyballot.org.
+					IN TXT		foo bar
+
+; more comments
