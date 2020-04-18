@@ -1,6 +1,6 @@
 $ORIGIN mailmyballot.org.
 
-; GSuite Email
+; GSuite email
 @						IN MX			1	aspmx.l.google.com.
 @						IN MX			5	alt1.aspmx.l.google.com.
 @						IN MX			5	alt2.aspmx.l.google.com.
@@ -16,7 +16,7 @@ email					IN MX 			10	mxb.mailgun.org.
 email.email				IN CNAME 			mailgun.org.
 krs._domainkey.email	IN TXT 				k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDanswo2OKDmGLrrDU4bk6uL9lQCui2LNRA5Wh9SAA9KI60Lsc0X8PUyvA+xyGaGioJ8oPIxr567KCzIAZZ/vlPkmN12PWB2YIQPU19lBXlcQ0F1Uh0PVrqHq3x6RM1erzwH1IwL2sBwy/gTdiF8gtd6sDymv3PK3LuXMWdAQwaZQIDAQAB
 
-; gcloud
+; gcloud app-staging
 app-staging				IN TXT				google-site-verification=f21s8DObQ3XRgfONvW2o5qBrjFDJwXW9V2Oypn1ogUM
 app-staging				IN A 				216.239.32.21
 app-staging				IN A 				216.239.34.21
@@ -26,3 +26,14 @@ app-staging				IN AAAA 			2001:4860:4802:32::15
 app-staging				IN AAAA 			2001:4860:4802:34::15
 app-staging				IN AAAA 			2001:4860:4802:36::15
 app-staging				IN AAAA 			2001:4860:4802:38::15
+
+; gcloud app
+app                     IN TXT				google-site-verification=E609hIqmSg3VxEFNdpzy94m7Tf03itfz7J5i7WV4ke0
+app     				IN A 				216.239.32.21
+app     				IN A 				216.239.34.21
+app     				IN A 				216.239.36.21
+app     				IN A 				216.239.38.21
+app     				IN AAAA 			2001:4860:4802:32::15
+app     				IN AAAA 			2001:4860:4802:34::15
+app     				IN AAAA 			2001:4860:4802:36::15
+app     				IN AAAA 			2001:4860:4802:38::15
