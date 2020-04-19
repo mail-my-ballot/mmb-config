@@ -8,14 +8,14 @@ $ORIGIN mailmyballot.org.
 @						IN MX			10	alt4.aspmx.l.google.com.
 @						IN MX			15  yacxhhxbqxxa2m44xdmu3qsuilsdc2vfebldp7av7u7zzp2bbzoa.mx-verification.google.com.
 @						IN TXT      	   	v=spf1 include:_spf.google.com ~all
-google._domainkey		IN TXT				v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAw/fpRWxm+NCUsFvzVwdMugCNu5Pw8vmj/nM8RNWfNZMokLoXaOcwsAosp8VJfbfvWMo54d7TjnpOf0wMMJURJut1htDHH0oSsTe+wqGg8lT10wnxCRZK0RZARa5Nh3Z6//ydG9pkvqSjKsUYu1uscWdlvBO20xHcRco3mbYY/O2Kj1cZnVvbYxC3wu/UJOURRU5vrSd2akSR3JqajOjCuUjDctvcpmzDvc8m4NLS+m8iBrBVta/RpiRGtPDf5oA8jHyVgqKxT/hX2nzdFJ8ZDRpGVs65w1ZXdk4Z/z38hv53Updg092++U0/r7xtUzJj4LjzRAflY+z8rfHPnn6SzwIDAQAB
+google._domainkey		IN TXT				"v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAw/fpRWxm+NCUsFvzVwdMugCNu5Pw8vmj/nM8RNWfNZMokLoXaOcwsAosp8VJfbfvWMo54d7TjnpOf0wMMJURJut1htDHH0oSsTe+wqGg8lT10wnxCRZK0RZARa5Nh3Z6//ydG9pkvqSjKsUYu1uscWdlvBO20xHcRco3mbYY/O2Kj1cZnVvbYxC3wu/UJOURRU5vrSd2akSR3JqajOjCuUjDctvcpmzDvc8m4NLS+m8iBrBVta/RpiRGtPDf5oA8jHyVgqKxT/hX2nzdFJ8ZDRpGVs65w1ZXdk4Z/z38hv53Updg092++U0/r7xtUzJj4LjzRAflY+z8rfHPnn6SzwIDAQAB"
 
 ; mailgun email 
 email					IN TXT 				v=spf1 include:mailgun.org ~all
 email					IN MX 			10	mxa.mailgun.org.
 email					IN MX 			10	mxb.mailgun.org.
 email.email				IN CNAME 			mailgun.org.
-krs._domainkey.email	IN TXT 				k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDanswo2OKDmGLrrDU4bk6uL9lQCui2LNRA5Wh9SAA9KI60Lsc0X8PUyvA+xyGaGioJ8oPIxr567KCzIAZZ/vlPkmN12PWB2YIQPU19lBXlcQ0F1Uh0PVrqHq3x6RM1erzwH1IwL2sBwy/gTdiF8gtd6sDymv3PK3LuXMWdAQwaZQIDAQAB
+krs._domainkey.email	IN TXT 				"k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDanswo2OKDmGLrrDU4bk6uL9lQCui2LNRA5Wh9SAA9KI60Lsc0X8PUyvA+xyGaGioJ8oPIxr567KCzIAZZ/vlPkmN12PWB2YIQPU19lBXlcQ0F1Uh0PVrqHq3x6RM1erzwH1IwL2sBwy/gTdiF8gtd6sDymv3PK3LuXMWdAQwaZQIDAQAB"
 
 ; gcloud app-staging
 app-staging				IN TXT				google-site-verification=f21s8DObQ3XRgfONvW2o5qBrjFDJwXW9V2Oypn1ogUM
