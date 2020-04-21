@@ -4,5 +4,3 @@ $ORIGIN mailmyballot.co.
 ;comment
 staging				IN CNAME	mailmyballot.org.
 					IN TXT		foo bar
-
-; more comments
