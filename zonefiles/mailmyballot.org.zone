@@ -38,3 +38,9 @@ app     				IN AAAA 			2001:4860:4802:32::15
 app     				IN AAAA 			2001:4860:4802:34::15
 app     				IN AAAA 			2001:4860:4802:36::15
 app     				IN AAAA 			2001:4860:4802:38::15
+
+; Sendin Blue
+mail._domainkey.newsletter	IN TXT			"k=rsa;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDeMVIzrCa3T14JsNY0IRv5/2V1/v2itlviLQBwXsa7shBD6TrBkswsFUToPyMRWC9tbR/5ey0nRBH0ZVxp+lsmTxid2Y2z+FApQ6ra2VsXfbJP3HE6wAO0YTVEJt1TmeczhEd2Jiz/fcabIISgXEdSpTYJhb0ct0VJRxcg4c8c7wIDAQAB"
+newsletter					IN TXT			v=spf1 include:spf.sendinblue.com mx ~all
+newsletter					IN TXT			Sendinblue-code:2e8e900639745673d9c9a1ef5f70d898
+_dmarc.newsletter			IN TXT			"v=DMARC1; p=none; sp=none; rua=mailto:dmarc@mailinblue.com!10m; ruf=mailto:dmarc@mailinblue.com!10m; rf=afrf; pct=100; ri=86400"
