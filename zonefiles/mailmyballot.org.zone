@@ -7,8 +7,13 @@ $ORIGIN mailmyballot.org.
 @						IN MX			10	alt3.aspmx.l.google.com.
 @						IN MX			10	alt4.aspmx.l.google.com.
 @						IN MX			15  yacxhhxbqxxa2m44xdmu3qsuilsdc2vfebldp7av7u7zzp2bbzoa.mx-verification.google.com.
-@						IN TXT      	   	v=spf1 include:_spf.google.com ~all
 google._domainkey		IN TXT				"v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAw/fpRWxm+NCUsFvzVwdMugCNu5Pw8vmj/nM8RNWfNZMokLoXaOcwsAosp8VJfbfvWMo54d7TjnpOf0wMMJURJut1htDHH0oSsTe+wqGg8lT10wnxCRZK0RZARa5Nh3Z6//ydG9pkvqSjKsUYu1uscWdlvBO20xHcRco3mbYY/O2Kj1cZnVvbYxC3wu/UJOURRU5vrSd2akSR3JqajOjCuUjDctvcpmzDvc8m4NLS+m8iBrBVta/RpiRGtPDf5oA8jHyVgqKxT/hX2nzdFJ8ZDRpGVs65w1ZXdk4Z/z38hv53Updg092++U0/r7xtUzJj4LjzRAflY+z8rfHPnn6SzwIDAQAB"
+
+; Mailchimp DKIM
+k1._domainkey           IN CNAME            dkim.mcsv.net
+
+; Mailchimp and GSuite SPF
+@						IN TXT      	   	v=spf1 include:_spf.google.com include:servers.mcsv.net ~all
 
 ; mailgun email 
 email					IN TXT 				v=spf1 include:mailgun.org ~all
