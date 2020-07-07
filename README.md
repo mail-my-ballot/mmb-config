@@ -1,6 +1,8 @@
 # mmb-config
 Configurations for MailMyBallot.org
 
+This repo is no longer actively maintained and has been migrated to https://github.com/vote-by-mail/vbm-config.
+
 ## Usage
 To get started, look at the `Makefile`.
 
